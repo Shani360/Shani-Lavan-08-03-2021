@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Currency from './components/Currency';
 import BoughtItemsPage from './pages/BoughtItemsPage';
 import ReceivedItemsPage from './pages/ReceivedItemsPage';
@@ -8,7 +8,7 @@ import './styles.scss';
 function App(){
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path={`/${configRoutes.paths[0].value}`} render={() => (
           <BoughtItemsPage/>
@@ -20,8 +20,9 @@ function App(){
         )}
         />
       </Switch>
-      </BrowserRouter>
       <Currency />
+
+      </HashRouter>
     </div>
     );
   }
