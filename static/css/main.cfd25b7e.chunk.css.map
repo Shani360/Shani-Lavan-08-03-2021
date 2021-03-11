@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles.scss"],"names":[],"mappings":"AAAA,EACE,QAAS,CACT,+CAAkD","file":"main.cfd25b7e.chunk.css","sourcesContent":["* {\n  margin: 0;\n  font-family: \"Noto Sans JP\", sans-serif !important;\n}\n"]}
